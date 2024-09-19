@@ -21,5 +21,6 @@ app.get("/ping", async (_req : Request, res: Response) =>
 app.get('/bananas', async (_req : Request, res: Response) =>
     res.send('hello world, this is bananas'));
   
-app.get('/lemon', async (_req : Request, res: Response) =>
-    res.send('999x Lemon for €2.99!'));
+app.get('/Lemon', async (_req : Request, res: Response) =>
+    res.send('mmm lemon!'));
+
