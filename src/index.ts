@@ -1,5 +1,6 @@
 import express, {Application, Request, Response} from "express" ;
 import morgan from "morgan";
+import userRoutes from './routes/users';
 
 const PORT = process.env.PORT || 7603;
 
@@ -24,3 +25,4 @@ app.get('/bananas', async (_req : Request, res: Response) =>
 app.get('/Lemon', async (_req : Request, res: Response) =>
     res.send('mmm lemon!'));
 
+app.use('/api/v1/users', userRoutes)
